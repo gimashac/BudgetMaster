@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="/Fiscale/css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>BudgetMaster Pro</h1>
+            <nav>
+                <ul>
+                    <li>Budgeting Made Simple.</li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <br><br><br><br><br>
+            <center><h1>Login</h1></center>
+            <form class="form" action="login_process.php" method="post" id="loginForm">
+                <label for="email">Email:</label>
+                <input type="email" name="email" required>
+    
+                <label for="password">Password:</label>
+                <input type="password" name="password" required>
+    
+                <button type="button" onclick="requestOTP()">Login</button>
+            </form>
+        </div>
+        <br><br><br><br><br><br><br><br>
+    </main>
+        
+    <script>
+        function requestOTP() {
+            // Simulate OTP request (in real-world, this would be sent to the user's mobile)
+            var otp = Math.floor(1000 + Math.random() * 9000);
+
+            // Redirect to OTP verification page
+            window.location.href = 'otp_verification.php?otp=' + otp;
+        }
+    </script>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 BudgetMaster Pro. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+        </div>
+    </footer>
+</body>
+</html>

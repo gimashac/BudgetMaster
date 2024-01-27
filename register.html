@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="/Fiscale/css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>BudgetMaster Pro</h1>
+            <nav>
+                <ul>
+                    <li>Budgeting Made Simple.</li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <center><h1>Register</h1></center>
+            <form class="form" action="register_process.php" method="post">
+                <label for="first_name">First Name:</label>
+                <input type="text" name="first_name" required>
+
+                <label for="last_name">Last Name:</label>
+                <input type="text" name="last_name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" name="email" required>
+
+                <label for="password">Password:</label>
+                <input type="password" name="password" required>
+
+                <label for="mobile_number">Mobile Number:</label>
+                <input type="text" name="mobile_number" required>
+
+                <button type="submit">Register</button>
+            </form>
+        </div>
+        <br><br>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 BudgetMaster Pro. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+        </div>
+    </footer>
+</body>
+</html>
